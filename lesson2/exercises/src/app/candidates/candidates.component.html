@@ -4,8 +4,8 @@
     <div class="row justify-content-center">
         <div class="candidates col-3">
             <h2>Candidates</h2>
-            <ol>
-                <li>Use *ngFor to automatically list all of the candidates' names.</li>
+            <ol >
+                <li *ngFor = "let candidate of candidates">{{candidate}}</li>
             </ol>
         </div>
     
