@@ -5,7 +5,7 @@
         <div class="candidates col-3">
             <h2>Candidates</h2>
             <ol >
-                <li *ngFor = "let candidate of candidates">{{candidate}}</li>
+                <li *ngFor = "let candidate of candidates" (click) = "selected = candidate">{{candidate}}</li>
             </ol>
         </div>
     
